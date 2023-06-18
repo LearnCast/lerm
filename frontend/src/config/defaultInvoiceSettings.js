@@ -1,5 +1,5 @@
 export default {
-  companyName: '',
+  companyName: 'Lerm',
   gstNumber: '',
   taxPercent: 18,
   taxEnable: 'true',
@@ -7,6 +7,6 @@ export default {
   taxType: 'exc',
   companyAddress: '',
   note: 'Thank You For Shopping',
-  currency: 'inr',
+  currency: 'dollar',
   currentErpNum: '0001',
 };
