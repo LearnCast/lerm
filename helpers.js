@@ -94,53 +94,53 @@ exports.settingMedical = async (name) => {
   }
 };
 
-// const settingCommercial = () => {
-// 	return new Promise((resolve, reject) => {
-// 		try {
-// 			resolve(getData('SettingCommercial'));
-// 		} catch (error) {
-// 			reject(error);
-// 		}
-// 	});
-// }
+const settingCommercial = () => {
+  return new Promise((resolve, reject) => {
+    try {
+      resolve(getData('SettingCommercial'));
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
 
-// const settingGlobal = () => {
-// 	return new Promise((resolve, reject) => {
-// 		try {
-// 			resolve(getData('SettingGlobal'));
-// 		} catch (error) {
-// 			reject(error);
-// 		}
-// 	});
-// }
+const settingGlobal = () => {
+  return new Promise((resolve, reject) => {
+    try {
+      resolve(getData('SettingGlobal'));
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
 
-// const settingMedical = () => {
-// 	return new Promise( (resolve, reject) => {
-// 		try {
-// 			resolve(getData('SettingMedical'));
-// 		} catch (error) {
-// 			reject(error);
-// 		}
-// 	});
-// }
+const settingMedical = () => {
+  return new Promise((resolve, reject) => {
+    try {
+      resolve(getData('SettingMedical'));
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
 
 /**
  * Medical` settings
  */
-// module.exports.settings = async (callback) => {
-// 	var settings = {}
+module.exports.settings = async (callback) => {
+  var settings = {};
 
-// 	await settingCommercial().then(function (data) {
-// 		settings['commercial'] = data;
-// 	});
+  await settingCommercial().then(function (data) {
+    settings['commercial'] = data;
+  });
 
-// 	await settingGlobal().then(function (data) {
-// 		settings['global'] = data;
-// 	});
+  await settingGlobal().then(function (data) {
+    settings['global'] = data;
+  });
 
-// 	await settingMedical().then(function (data) {
-// 		settings['medical'] = data;
-// 	});
+  await settingMedical().then(function (data) {
+    settings['medical'] = data;
+  });
 
-// 	callback(settings);
-// }
+  callback(settings);
+};
