@@ -1,0 +1,13 @@
+{
+  "presets": ["@babel/env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "lib", // default: lib
+        "style": true
+      }
+    ]
+  ]
+}

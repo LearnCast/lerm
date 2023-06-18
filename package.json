@@ -1,0 +1,53 @@
+{
+  "name": "lerm-api",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js --ignore public/",
+    "production": "NODE_ENV=production",
+    "setup": "node ./setup/setup.js",
+    "reset": "node ./setup/reset.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "4.0.0",
+    "express": "^4.18.1",
+    "glob": "7.1.1",
+    "helmet": "^4.6.0",
+    "html-pdf": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "module-alias": "^2.2.2",
+    "moment": "^2.26.0",
+    "mongodb": "^5.6.0",
+    "mongoose": "^6.3.3",
+    "mongoose-autopopulate": "^0.14.0",
+    "mongoose-sequence": "^5.2.2",
+    "multer": "^1.4.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "_moduleAliases": {
+    "@": "."
+  },
+  "description": "LERM (Learncast ERP/CRM) is Open Source ERP/CRM (Invoice / Inventory / Accounting / HR) Based on Advanced Mern Stack (Node.js / Express.js / MongoDb / React.js ) with Ant Design (AntD) and Redux",
+  "main": "app.js",
+  "keywords": [
+    "erp",
+    "crm"
+  ],
+  "author": "Learncast",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learncast/lerm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/learncast/lerm/issues"
+  },
+  "homepage": "https://github.com/learncast/lerm#readme"
+}
